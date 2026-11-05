@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transcriptomic Immune Infiltration Confounds Bulk Promoter Methylation–Survival Screens in Cutaneous Melanoma but Not in Four Other Solid Cancers, with a Promoter Classifier Separating Melanoma from Benign Nevi</title>
+    <style>
+        @page {
+            size: letter;
+            margin: 1in;
+            @bottom-right {
+                content: counter(page);
+                font-family: "Times New Roman", Times, serif;
+                font-size: 11pt;
+            }
+        }
+
+        html, body {
+            width: 6.5in;
+            max-width: 6.5in;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 12pt;
+            line-height: 20.7pt;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        h1.paper-title {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 6pt;
+            line-height: 18pt;
+        }
+
+        .authors {
+            font-size: 11.5pt;
+            text-align: center;
+            margin-bottom: 5pt;
+            line-height: 15.5pt;
+        }
+
+        .affiliations {
+            font-size: 10pt;
+            text-align: left;
+            margin-bottom: 8pt;
+            line-height: 13.5pt;
+        }
+
+        h2 {
+            font-size: 12.5pt;
+            font-weight: bold;
+            margin-top: 7pt;
+            margin-bottom: 2.5pt;
+            line-height: 17pt;
+            page-break-after: avoid;
+        }
+
+        h3 {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-top: 5.5pt;
+            margin-bottom: 2pt;
+            line-height: 17pt;
+            page-break-after: avoid;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 3.5pt;
+            text-align: justify;
+            text-indent: 0.35in;
+            font-size: 12pt;
+            line-height: 20.7pt;
+        }
+
+        p.abstract-text {
+            line-height: 20.7pt;
+            margin-bottom: 0;
+        }
+
+        p.no-indent {
+            text-indent: 0;
+        }
+
+        ol, ul {
+            margin-top: 2pt;
+            margin-bottom: 3.5pt;
+            padding-left: 0.35in;
+            font-size: 12pt;
+            line-height: 20.7pt;
+        }
+
+        li {
+            margin-bottom: 1.5pt;
+            text-align: justify;
+        }
+
+        .figure-box {
+            margin: 4pt 0;
+            text-align: center;
+            page-break-inside: avoid;
+        }
+
+        .figure-box img {
+            max-width: 100%;
+            max-height: 3.05in;
+            width: auto;
+            height: auto;
+        }
+
+        .fig-caption {
+            font-size: 9.5pt;
+            line-height: 12.5pt;
+            text-align: justify;
+            margin-top: 2.5pt;
+            text-indent: 0;
+        }
+
+        .table-wrapper {
+            margin: 4.5pt 0;
+            page-break-inside: avoid;
+            width: 100%;
+            max-width: 6.5in;
+        }
+
+        .table-title {
+            font-size: 9.6pt;
+            font-weight: bold;
+            margin-bottom: 2pt;
+            line-height: 12.5pt;
+            text-indent: 0;
+        }
+
+        table.manuscript-table {
+            width: 100%;
+            max-width: 6.5in;
+            border-collapse: collapse;
+            font-size: 8.3pt;
+            line-height: 10.3pt;
+            border-top: 1.5pt solid #000000;
+            border-bottom: 1.5pt solid #000000;
+        }
+
+        table.manuscript-table th {
+            font-weight: bold;
+            padding: 1.8pt 2pt;
+            border-bottom: 1pt solid #000000;
+            text-align: left;
+            vertical-align: bottom;
+        }
+
+        table.manuscript-table td {
+            padding: 1.5pt 2pt;
+            border-bottom: 0.5pt solid #dddddd;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        table.manuscript-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        table.manuscript-table th.center {
+            text-align: center;
+        }
+
+        table.manuscript-table td.center {
+            text-align: center;
+        }
+
+        table.manuscript-table td.nowrap {
+            white-space: nowrap;
+        }
+
+        .table-note {
+            font-size: 8.2pt;
+            line-height: 11pt;
+            margin-top: 2pt;
+            text-indent: 0;
+            text-align: left;
+        }
+
+        .ref-list {
+            padding-left: 0.35in;
+            line-height: 17.5pt;
+            font-size: 11.5pt;
+        }
+
+        .ref-list li {
+            margin-bottom: 3pt;
+        }
+
+        code {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 11.5pt;
+        }
+
+        table.manuscript-table code {
+            font-size: 8.3pt;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="paper-title">Transcriptomic Immune Infiltration Confounds Bulk Promoter Methylation–Survival Screens in Cutaneous Melanoma but Not in Four Other Solid Cancers, with a Promoter Classifier Separating Melanoma from Benign Nevi</h1>
+
+    <div class="authors">
+        Nolan Yu<sup>1</sup>, Valentina L. Kouznetsova<sup>1,2</sup>, Santosh Kesari<sup>3</sup>, and Igor F. Tsigelny<sup>1,2,4</sup>
+    </div>
+
+    <div class="affiliations">
+        <sup>1</sup>Biana Institute, San Diego, CA, United States<br>
+        <sup>2</sup>San Diego Supercomputer Center, University of California, San Diego, La Jolla, CA, United States<br>
+        <sup>3</sup>Lundquist Institute, Torrance, CA, United States<br>
+        <sup>4</sup>Department of Neurosciences, University of California San Diego, La Jolla, CA, United States
+    </div>
+
+    <h2>Abstract</h2>
+    <p class="abstract-text">Bulk tumor DNA methylation arrays measure mixed malignant, immune, and stromal cells. Across five TCGA cohorts (<em>n</em> = 2,198: cutaneous melanoma [SKCM, <em>n</em> = 456], head and neck [HNSC, <em>n</em> = 527], lung [LUAD, <em>n</em> = 437], bladder [BLCA, <em>n</em> = 407], and liver [LIHC, <em>n</em> = 371]), we evaluated 62,060–67,102 promoter CpGs using clinical covariate-adjusted Cox models with Benjamini-Hochberg false discovery rate (FDR) control. Direct adjustment for a 14-gene RNA-seq immune infiltration score attenuated survival hits in melanoma—where immune infiltration strongly predicted survival (<em>n</em> = 454; HR = 0.681, <em>p</em> = 6.99 &times; 10<sup>&minus;8</sup>), reducing clinical-only hits by 99.96% from 5,279 to 2 CpGs (<em>DYSFIP1</em> <code>cg03750525</code>, <em>KRAS</em> <code>cg23152216</code>)—whereas anatomic biopsy-site adjustment (lymph node vs. skin/visceral) left 4,281 of 4,956 full-cohort hits (13.6% attenuated). In HNSC, LIHC, BLCA, and LUAD (HR = 0.865–0.925, <em>p</em> = 0.037–0.327), RNA immune adjustment removed 0% of the small baseline hit sets (retaining 11, 59, 79, and 91 hits). By contrast, top 5 promoter principal components (PCs) captured broader global methylation and subtype variation, attenuating clinical-only hits across cohorts regardless of immune prognostic value (99.2% in SKCM, 73.3% in HNSC, 100% in LIHC, 77.0% in BLCA, 28.2% in LUAD). In SKCM, 5-PC hits were enriched for inverse mRNA correlations (36.4% vs. 23.2%, <em>p</em> = 0.0090), including three <em>CRABP2</em> promoter probes (<code>cg02363950</code> <em>r</em><sub>partial</sub> = &minus;0.321), but <em>CRABP2</em> mRNA showed no evidence of mediating survival (bootstrap 95% CI: &minus;0.042 to +0.047; Sobel <em>p</em> = 0.908) and multi-CpG models did not improve cross-validated C-index (0.647 vs. 0.653). For diagnosis, promoter classifiers trained on GSE120878 (<em>n</em> = 162) achieved cross-validated AUC of 0.995–0.998 (88.8–99.6% SKCM sensitivity) but showed no discrimination between tissue melanomas and cultured melanocytes in GSE122909 (<em>n</em> = 15; AUC 0.45–0.50).</p>
+
+    <h2 style="page-break-before: always; margin-top: 0;">Introduction</h2>
+    <p>Cutaneous melanoma, arising from the malignant transformation of melanocytes, causes the majority of skin cancer deaths [1,2]. High mortality is linked to UV-induced mutational burden, metastasis, and therapy resistance [2,3]. Alongside somatic driver mutations (<em>BRAF</em>, <em>NRAS</em>, <em>NF1</em>) [2,4], epigenetic remodeling via DNA methylation—the covalent addition of a methyl group (&ndash;CH<sub>3</sub>) to the 5-carbon of cytosine in CpG dinucleotides by DNA methyltransferases (DNMT1, DNMT3A, DNMT3B), counterbalanced by TET dioxygenases—regulates promoter accessibility and gene silencing [5–8]. In solid tumors, focal promoter hypermethylation can silence tumor suppressors, while global hypomethylation tracks genomic instability [6–8].</p>
+    <p>However, bulk tumor methylation arrays in solid cancers measure a composite mixture of malignant cells, infiltrating leukocytes, and stroma [14]. In The Cancer Genome Atlas Skin Cutaneous Melanoma (TCGA-SKCM) cohort, lymphocyte infiltration and cytolytic activity are strongly associated with survival [4,6]. Clinical-only survival screens across bulk methylation arrays therefore risk confounding tumor-intrinsic methylation with leukocyte infiltration or anatomic biopsy site (such as lymph node versus cutaneous metastases). Similarly, in diagnostic modeling, Conway et al. [9] showed that a 40-CpG ElasticNet classifier in formalin-fixed, paraffin-embedded (FFPE) biopsies separates primary melanomas from benign nevi (GSE120878; validation ROC-AUC 0.996). Any classifier trained on nevi versus melanomas must nevertheless be stress-tested on independent melanocytic specimens—such as normal cultured melanocytes and tissue melanomas in GSE122909 [10]—to test whether its top features reflect malignancy-specific remodeling, culture-associated changes, or cohort differences.</p>
+    <p>Here, we analyzed 62,060–67,102 promoter CpGs across five TCGA solid cancer cohorts (<em>n</em> = 2,198 total: TCGA-SKCM, TCGA-HNSC, TCGA-LUAD, TCGA-BLCA, and TCGA-LIHC) using clinical covariate-adjusted Cox proportional hazards models [12] with Benjamini-Hochberg false discovery rate (FDR) control [13]. Focusing on TCGA-SKCM (<em>n</em> = 456; 454 with RNA-seq) and comparing across all five cohorts, we characterized the correlates of the top promoter methylation principal components (PCs), compared direct 14-gene transcriptomic immune-score adjustment against 5-PC adjustment, evaluated permutation-based FDR calibration, tested anatomic biopsy-site adjustment in melanoma, tested CpG &times; immune-score interactions across a 50/50 discovery/validation split, tested genome-wide enrichment of survival CpGs for inverse mRNA correlations, and tested via nonparametric bootstrap and Sobel mediation [24] whether <em>CRABP2</em> mRNA mediates the survival association of <em>CRABP2</em> promoter methylation. Finally, we trained promoter classifiers on GSE120878 [9] with in-fold feature selection and evaluated their sensitivity in TCGA-SKCM and boundary conditions in GSE122909 [10].</p>
+
+    <h2>Methods</h2>
+
+    <h3>Data Sources</h3>
+    <p>Illumina HumanMethylation450 (&beta;-value) arrays, clinical annotations, survival follow-up, and level-3 RNA-seq gene expression (<code>HiSeqV2</code>, log<sub>2</sub>(RSEM+1)) for TCGA-SKCM (475 methylation; 474 RNA-seq samples), head and neck squamous cell carcinoma (TCGA-HNSC), lung adenocarcinoma (TCGA-LUAD), bladder urothelial carcinoma (TCGA-BLCA), and liver hepatocellular carcinoma (TCGA-LIHC) were obtained from the Genomic Data Commons (GDC) and TCGA hubs on UCSC Xena [4,17]. Diagnostic training data comprised GSE120878 (89 primary invasive FFPE melanomas and 73 benign nevi; Conway et al. [9]). GSE122909 (Fujiwara et al. [10]) was held out strictly for external stress testing; series metadata confirm 19 samples: 7 tissue melanomas (5 primary [PM1, PN2, PM3, PM5, PM6], 2 metastatic [MM4, MM5]), 8 normal cultured melanocyte samples (5 patient-derived cultures from 4 melanoma donors [N1, N1-2, N2, N3, N4] plus 3 commercial normal human epidermal melanocyte [NHEM] lines [CN1, CN2, CN3]), and 4 melanoma cell lines (SK-MEL-28, G361, DEOC-1, HM2KO). Promoter annotations (TSS200/TSS1500), coordinates, and polymorphism flags (<code>Probe_SNPs</code>, <code>Probe_SNPs_10</code>) were obtained from the Illumina GPL13534 manifest [11,15,16].</p>
+
+    <h3>Prognostic Survival, Immune Composition, Biopsy Site, and Cross-Cancer Generalization</h3>
+    <p>Across all five TCGA cohorts, we retained tumor samples (<code>01A</code>/<code>01B</code> primary; <code>06A</code>/<code>06B</code>/<code>07A</code> metastatic), excluded all solid-tissue normal samples (<code>11A</code>/<code>11B</code>; <em>n</em> = 2 in SKCM, <em>n</em> = 50 in HNSC, <em>n</em> = 32 in LUAD, <em>n</em> = 21 in BLCA, <em>n</em> = 50 in LIHC), required positive overall survival time and non-missing age, and deduplicated multiple aliquots to one sample per patient (preferring primary tumors). This yielded 456 patients in TCGA-SKCM (99 primary, 357 metastatic; 221 deaths; 454 with RNA-seq), 527 in TCGA-HNSC (527 primary; 224 deaths; 519 with RNA-seq), 437 in TCGA-LUAD (437 primary; 158 deaths; 433 with RNA-seq), 407 in TCGA-BLCA (407 primary; 180 deaths; 402 with RNA-seq), and 371 in TCGA-LIHC (371 primary; 133 deaths; 365 with RNA-seq). Baseline clinical covariates in all five cohorts comprised standardized age, sex, and AJCC pathologic stage (I, II, III, IV, unknown; plus stage 0 and primary vs. metastatic status in TCGA-SKCM, the only cohort containing metastases). To test anatomic resection site in TCGA-SKCM, we extracted <code>site_of_resection_or_biopsy.diagnoses</code> (available for all 456/456 patients) and categorized biopsies into lymph node (<em>n</em> = 209: 208 metastatic, 1 primary), skin/cutaneous (<em>n</em> = 141: 90 primary, 51 metastatic), subcutaneous/soft tissue (<em>n</em> = 71: 65 metastatic, 6 primary), and visceral/other sites (<em>n</em> = 35: 33 metastatic, 2 primary). Among the 139,996 promoter probes (TSS200/TSS1500) in GPL13534, we retained CpGs in each cohort with &le; 20% missing values and pre-imputation SD(&beta;) &gt; 0.05, yielding 67,102 tested promoter CpGs in SKCM, 64,044 in HNSC, 62,060 in LUAD, 63,201 in BLCA, and 64,673 in LIHC. Remaining missing values were mean-imputed and each CpG was standardized to zero mean and unit variance.</p>
+    <p>Each CpG was tested using a covariate-adjusted Cox score test (Breslow ties) [12], with null parameters estimated via BFGS optimization (<code>scipy.optimize.minimize</code>) [18,19] and multivariable candidate and mediation models fitted via <code>statsmodels</code> (<code>PHReg</code>) [22]. Across all tested probes, <em>p</em>-values were adjusted via the Benjamini-Hochberg procedure (<em>q</em>-values) [13]. Re-fitting the top 15 clinical hits in SKCM with exact Efron ties gave near-identical results (e.g., <em>KRAS</em> <code>cg23152216</code> Breslow <em>p</em> = 1.47 &times; 10<sup>&minus;10</sup> vs. Efron <em>p</em> = 2.5 &times; 10<sup>&minus;10</sup>). In SKCM, we also evaluated a Cox model stratified by primary vs. metastatic status, a model adjusted for anatomic biopsy site (<code>Clinical + Biopsy Site</code>), proportional-hazards checks via CpG &times; log(time), and a SNP-free screen removing all 9,679 promoter probes carrying an Illumina <code>Probe_SNPs</code> (<em>n</em> = 7,214) or <code>Probe_SNPs_10</code> (<em>n</em> = 2,872) flag (leaving 57,423 probes).</p>
+    <p>To summarize bulk tumor variation in an outcome-independent manner, we computed principal components (PCs) of the standardized promoter methylation matrix (<code>scikit-learn</code> <code>PCA</code> [21]) in each cohort and correlated PC1–5 against global mean promoter methylation, clinical covariates, and transcriptomic immune infiltration. From matched <code>HiSeqV2</code> RNA-seq profiles, we computed a standardized 14-gene immune infiltration score averaging <em>Z</em>-scores of canonical pan-leukocyte, T-cell, cytolytic, and antigen-presentation markers (<em>PTPRC</em>/CD45, <em>CD8A</em>, <em>CD8B</em>, <em>CD3D</em>, <em>CD3E</em>, <em>GZMA</em>, <em>PRF1</em>, <em>IFNG</em>, <em>CXCL9</em>, <em>CXCL10</em>, <em>STAT1</em>, <em>PSMB9</em>, <em>TAP1</em>, <em>HLA-DRA</em>), and verified a 12-gene score excluding <em>PSMB9</em>/<em>TAP1</em> and a 6-gene T-cell/cytolytic score (<em>CD8A</em>, <em>CD8B</em>, <em>CD3D</em>, <em>CD3E</em>, <em>GZMA</em>, <em>PRF1</em>) in SKCM. In each cohort, we repeated the Cox screen adjusting for clinical covariates plus the top 3 PCs or top 5 PCs (on each full methylation cohort), or the 14-gene RNA-seq immune score (on each RNA-matched subset, compared against the clinical-only screen on the identical RNA-matched patients). To evaluate empirical FDR calibration across all five cohorts and four models, we ran 50 survival-time permutations per model holding covariates and methylation fixed (recording the nominal <em>p</em> &lt; 0.05 fraction, the fraction of permutations with &ge; 1 hit at <em>q</em> &lt; 0.05, and median/mean <em>q</em> &lt; 0.05 false positives). In SKCM (<em>n</em> = 454), we partitioned patients <em>a priori</em> into a 50/50 discovery (<em>n</em> = 227, 110 deaths) and validation (<em>n</em> = 227, 110 deaths) split stratified by death status to test median-split immune subgroups and CpG &times; immune-score interactions.</p>
+
+    <h3>Genome-Wide Regulator Enrichment, Mediation, and Concordance Evaluation</h3>
+    <p>In TCGA-SKCM, we mapped 65,227 of the 67,102 promoter CpGs to expressed genes in <code>HiSeqV2</code> RNA-seq (<em>n</em> = 454) and computed unadjusted, immune-adjusted partial, and 5-PC-adjusted partial Pearson correlations (<em>r</em>) with matched mRNA expression. Enrichment for inverse immune-adjusted correlations (<em>r</em><sub>partial</sub> &lt; &minus;0.20, <em>q</em> &lt; 0.05) among survival-linked CpGs was tested against the 65,227-probe background (Fisher's exact test) and 1,000 random CpG sets matched on joint deciles of probe SD(&beta;) and mean &beta;. For <em>CRABP2</em> (<code>cg02363950</code>), we tested whether <em>CRABP2</em> mRNA predicts survival in Cox models (<code>PHReg</code>) and evaluated the indirect pathway (methylation &rarr; mRNA &rarr; survival) via the Sobel test [24] and 1,000-resample nonparametric bootstrap percentile 95% CIs on <em>a</em> &times; <em>b</em>. Five-fold stratified cross-validation was used to test whether adding the top 50, 100, or 200 5-PC-adjusted CpGs (selected within each training fold) improves held-out Harrell's C-index.</p>
+
+    <h3>Diagnostic Classifier Training and External Stress Testing</h3>
+    <p>In GSE120878 (<em>n</em> = 162), we removed probes with &ge; 5% missing values, mean-imputed remaining sporadic missing entries, and evaluated L1-penalized logistic regression (<em>C</em> = 1.0), random forests (200 trees), and a 40-CpG ElasticNet logistic regression model (<code>l1_ratio = 0.5</code>, <em>C</em> = 1.0) across five-fold stratified cross-validation repeated twice using <code>scikit-learn</code> [21]. Within each training fold, features were ranked by Welch's <em>t</em>-statistic between melanomas and nevi to select the top <em>k</em> &isin; {10, 40, 50, 200} CpGs. We compared promoter-only models against models drawing from the 60,000 highest-variance array probes, and verified that in-fold variance filtering gave identical cross-validated performance (&Delta;AUC &lt; 0.001). Final promoter-only models trained on all 162 GSE120878 samples were applied without retuning to TCGA-SKCM (<em>n</em> = 456) and to the 15 non-cell-line samples in GSE122909 (7 tissue melanomas vs. 8 cultured melanocytes, with 2,000-resample stratified bootstrap 95% CIs on ROC-AUC; the 4 melanoma cell lines were analyzed separately). Analyses used Python with <code>numpy</code> [18], <code>scipy</code> [19], <code>pandas</code> [20], <code>scikit-learn</code> [21], <code>statsmodels</code> [22], and <code>matplotlib</code> [23].</p>
+
+    <h2>Results</h2>
+
+    <h3>Study Design, Analytical Funnel, and Attenuation of Clinical-Only Survival Associations</h3>
+    <p>The study design and analytical funnel are summarized in Figure 1 and Table 1. When adjusted only for clinical covariates in TCGA-SKCM (age, sex, stage, and primary vs. metastatic status), 15,264 of 67,102 promoter CpGs had <em>p</em> &lt; 0.05 (~3,355 expected under the null) and 4,956 reached <em>q</em> &lt; 0.05, of which 4,153 (83.8%) had HR &lt; 1 per SD increase in methylation and 803 had HR &gt; 1 (Table 1). A model stratified by primary vs. metastatic status yielded similar counts (15,367 at <em>p</em> &lt; 0.05; 4,680 at <em>q</em> &lt; 0.05), and removing all 9,679 probes with manifest <code>Probe_SNPs</code> or <code>Probe_SNPs_10</code> flags prior to FDR correction yielded 4,211 clinical-only hits at <em>q</em> &lt; 0.05 across 57,423 SNP-free promoter CpGs. In the unfiltered clinical-only screen, the lowest <em>p</em>-value occurred at <code>cg23152216</code> in <em>KRAS</em> (HR = 0.640, <em>p</em> = 1.47 &times; 10<sup>&minus;10</sup>, <em>q</em> = 9.89 &times; 10<sup>&minus;6</sup>).</p>
+
+    <p>Characterization of the top five promoter methylation PCs alongside matched TCGA-SKCM RNA-seq data (<em>n</em> = 454) revealed distinct sources of bulk variation (Figure 2B). <strong>PC1</strong> (13.4% of variance) tracked <strong>global mean promoter methylation</strong> (<em>r</em> = +0.978, <em>p</em> = 1.6 &times; 10<sup>&minus;312</sup>) and correlated modestly with age (<em>r</em> = +0.150, <em>p</em> = 0.0013), but not with the 14-gene RNA-seq immune score (<em>r</em> = &minus;0.040, <em>p</em> = 0.39) or sample type (<em>r</em> = +0.025, <em>p</em> = 0.60). By contrast, <strong>PC2</strong> (9.8% of variance) correlated strongly with the 14-gene transcriptomic immune score (<em>r</em> = +0.715, <em>p</em> = 2.58 &times; 10<sup>&minus;72</sup>; <em>r</em> = +0.729 with cytolytic <em>GZMA</em>/<em>PRF1</em>; <em>r</em> = +0.703 with pan-leukocyte <em>PTPRC</em>/CD45). <strong>PC3</strong> (5.6% of variance) correlated modestly with the immune score (<em>r</em> = &minus;0.224, <em>p</em> = 1.48 &times; 10<sup>&minus;6</sup>) and metastatic status (<em>r</em> = +0.125, <em>p</em> = 0.0074), <strong>PC4</strong> (3.1%) correlated with primary vs. metastatic status (<em>r</em> = +0.242, <em>p</em> = 1.79 &times; 10<sup>&minus;7</sup>), and <strong>PC5</strong> (2.5%) tracked sex via X/Y-linked probes (<em>r</em> = &minus;0.910). Together, PC1–3 explained 56.2% of the variance in the 14-gene immune score (multiple <em>R</em> = 0.750, <em>R</em><sup>2</sup> = 0.562). Excluding <em>PSMB9</em> and <em>TAP1</em> from the immune score yielded a slightly stronger correlation with PC2 (12-gene score: <em>r</em> = +0.725, <em>p</em> = 3.24 &times; 10<sup>&minus;75</sup>; PC1–3 <em>R</em> = 0.759), as did a 6-gene T-cell/cytolytic score (PC2 <em>r</em> = +0.758, <em>p</em> = 7.93 &times; 10<sup>&minus;86</sup>). In clinical-adjusted Cox models, PC2 (<em>p</em> = 0.001), PC3 (<em>p</em> = 0.003), and the RNA-seq immune score itself (HR = 0.681 per SD, <em>p</em> = 6.99 &times; 10<sup>&minus;8</sup> in <em>n</em> = 454) were each associated with survival, whereas PC1 was not (<em>p</em> = 0.14).</p>
+
+    <div class="figure-box">
+        <img src="pipeline_flowchart.png" alt="Figure 1: Cross-Cancer Prognostic and Diagnostic Pipeline Flowchart">
+        <div class="fig-caption"><strong>Fig. 1 Bioinformatic pipeline for cross-cancer survival modeling with immune vs. PC adjustment and diagnostic classification.</strong> (A) Prognostic branch across five TCGA cohorts (<em>n</em> = 2,198; TCGA-SKCM <em>n</em> = 456, 454 RNA-matched), showing promoter probe filtering (62,060–67,102 CpGs; 57,423 SNP-free in SKCM), clinical Cox screening (4,956 full / 5,279 RNA-matched hits in SKCM; 15–85 full / 11–91 RNA-matched hits in HNSC, LUAD, BLCA, and LIHC at <em>q</em> &lt; 0.05), direct RNA immune adjustment (99.96% attenuated in SKCM vs. 0% in other four) vs. 5-PC adjustment (28.2–100% attenuated across all five) and SKCM biopsy-site adjustment (4,281 hits), and C-index / <em>CRABP2</em> mediation checks. (B) Diagnostic branch trained on GSE120878 (89 melanomas vs. 73 nevi) and externally tested on TCGA-SKCM and GSE122909.</div>
+    </div>
+
+    <p>Adjusting the SKCM Cox screen for the first three promoter PCs attenuated FDR-significant loci from 4,956 to 49 CpGs at <em>q</em> &lt; 0.05 (31 shared with clinical-only hits; 99.4% attenuated); including five PCs left 78 CpGs at <em>q</em> &lt; 0.05 (42 shared; 99.2% attenuated; 48 and 78 CpGs when SNP-flagged probes were excluded before screening) (Figure 2A). Adjusting directly for the 14-gene RNA-seq immune score (<em>n</em> = 454) attenuated the 5,279 clinical-only hits in the RNA-matched cohort by 99.96% to <strong>2 CpGs at <em>q</em> &lt; 0.05</strong>: <code>cg03750525</code> (<em>DYSFIP1</em>; HR = 0.710, <em>p</em> = 4.80 &times; 10<sup>&minus;7</sup>, <em>q</em> = 0.0216) and <code>cg23152216</code> (<em>KRAS</em>; HR = 0.710, <em>p</em> = 6.45 &times; 10<sup>&minus;7</sup>, <em>q</em> = 0.0216), followed by <code>cg25053164</code> (<em>LOC286094</em>; HR = 0.703, <em>p</em> = 4.62 &times; 10<sup>&minus;6</sup>, <em>q</em> = 0.103).</p>
+
+    <div class="table-wrapper">
+        <div class="table-title">Table 1 Step-by-step data reduction and analytical funnel for prognostic and diagnostic analyses</div>
+        <table class="manuscript-table">
+            <thead>
+                <tr>
+                    <th style="width: 34%;">Analytical Stage</th>
+                    <th style="width: 10%;" class="center">Unit</th>
+                    <th style="width: 11%;" class="center">Count</th>
+                    <th style="width: 45%;">Filtering Criteria / Summary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Total TCGA-SKCM Array Profiles</td><td class="center">Samples</td><td class="center">475</td><td>UCSC Xena GDC release (Illumina 450K)</td></tr>
+                <tr><td>Final Deduplicated SKCM Cohort</td><td class="center">Patients</td><td class="center">456</td><td>Tumor samples (01A/06A/06B/07A; 2 <code>11A</code> normals excluded), 1 per patient (99 primary, 357 metastatic; 221 deaths; 454 with RNA-seq)</td></tr>
+                <tr><td>Total Promoter CpGs on Array</td><td class="center">CpG Sites</td><td class="center">139,996</td><td>Annotated to TSS200 or TSS1500 in GPL13534</td></tr>
+                <tr><td>Tested Promoter CpGs (TCGA-SKCM)</td><td class="center">CpG Sites</td><td class="center">67,102</td><td>&le; 20% missing values and pre-imputation SD(&beta;) &gt; 0.05 (57,423 without manifest SNPs)</td></tr>
+                <tr><td>Clinical-Adjusted Survival Hits (<em>p</em> &lt; 0.05)</td><td class="center">CpG Sites</td><td class="center">15,264</td><td>Adjusted for age, sex, AJCC stage, and primary vs. metastatic (~3,355 expected by chance)</td></tr>
+                <tr><td>Clinical-Adjusted Survival Hits (<em>q</em> &lt; 0.05)</td><td class="center">CpG Sites</td><td class="center">4,956</td><td>Benjamini-Hochberg FDR &lt; 0.05 (4,153 protective; 803 hazardous); RNA-matched (<em>n</em> = 454): 5,279; SNP-free: 4,211</td></tr>
+                <tr><td>Biopsy-Site-Adjusted Hits (Clinical + Site)</td><td class="center">CpG Sites</td><td class="center">4,281</td><td>FDR <em>q</em> &lt; 0.05 after adjusting for anatomic resection site (lymph node, skin, soft tissue, visceral; 13.6% attenuated)</td></tr>
+                <tr><td>Composition-Adjusted Hits (Clinical + 3 PCs)</td><td class="center">CpG Sites</td><td class="center">49</td><td>FDR <em>q</em> &lt; 0.05 after adjusting for top 3 promoter PCs (1 at <em>q</em> &lt; 0.01; SNP-free: 48; 99.4% of clinical hits attenuated)</td></tr>
+                <tr><td>Composition-Adjusted Hits (Clinical + 5 PCs)</td><td class="center">CpG Sites</td><td class="center">78</td><td>FDR <em>q</em> &lt; 0.05 after adjusting for top 5 promoter PCs (7 at <em>q</em> &lt; 0.01; SNP-free: 78; 99.2% of clinical hits attenuated)</td></tr>
+                <tr><td>Immune-Adjusted Hits (Clinical + RNA Immune)</td><td class="center">CpG Sites</td><td class="center">2</td><td>FDR <em>q</em> &lt; 0.05 after adjusting for 14-gene RNA-seq immune score (<em>n</em> = 454; 2/5,279 retained; 99.96% attenuated)</td></tr>
+                <tr><td>Cross-Cancer Cohorts (HNSC/LUAD/BLCA/LIHC)</td><td class="center">Patients</td><td class="center">1,742</td><td>HNSC (<em>n</em> = 527), LUAD (<em>n</em> = 437), BLCA (<em>n</em> = 407), LIHC (<em>n</em> = 371); 62,060–64,673 promoter CpGs</td></tr>
+                <tr><td>Diagnostic Training &amp; Stress-Test Sets</td><td class="center">Samples</td><td class="center">162 / 15</td><td>GSE120878 (89 melanomas, 73 nevi) and GSE122909 (7 tissue melanomas, 8 cultured melanocytes; plus 4 cell lines)</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p>Because 209 of the 456 TCGA-SKCM tumors (and 208 of 357 metastases) were resected from lymph nodes—an intrinsically lymphoid-rich compartment—we tested whether anatomic biopsy site (lymph node [<em>n</em> = 209], skin [<em>n</em> = 141], soft tissue [<em>n</em> = 71], visceral [<em>n</em> = 35]) explained the immune signal. Lymph node biopsy status correlated modestly with the RNA-seq immune score (<em>r</em> = +0.249, <em>p</em> = 7.29 &times; 10<sup>&minus;8</sup>; mean immune <em>Z</em> = +0.271 in lymph node vs. &minus;0.283 in skin, &minus;0.124 in soft tissue, &minus;0.227 in visceral sites) and with PC2 (<em>r</em> = +0.192, <em>p</em> = 3.85 &times; 10<sup>&minus;5</sup>). However, PC2 strongly tracked the RNA-seq immune score <strong>both within non-lymph-node tumors</strong> (<em>n</em> = 246: <em>r</em> = +0.692, <em>p</em> = 1.87 &times; 10<sup>&minus;36</sup>) and <strong>within lymph node biopsies</strong> (<em>n</em> = 208: <em>r</em> = +0.722, <em>p</em> = 9.84 &times; 10<sup>&minus;35</sup>). Moreover, adjusting the clinical Cox screen for biopsy site (<code>Clinical + Biopsy Site</code>, <em>n</em> = 456) left <strong>4,281 FDR-significant CpGs at <em>q</em> &lt; 0.05</strong> (14,613 at <em>p</em> &lt; 0.05; attenuating only 13.6% of the 4,956 clinical-only hits; Figure 2A), and the RNA-seq immune score remained strongly prognostic after biopsy-site adjustment (HR = 0.673, <em>p</em> = 8.85 &times; 10<sup>&minus;8</sup>). Adding 5 PCs or the RNA immune score on top of <code>Clinical + Biopsy Site</code> again collapsed significant hits from 4,281 to <strong>115 CpGs</strong> and <strong>2 CpGs</strong>. Thus, continuous variation in leukocyte infiltration within each anatomic compartment—rather than categorical biopsy site alone—is consistent with the bulk survival signal.</p>
+
+    <h3>Cross-Cancer Generalization, Immune vs. PC Adjustment, Permutation Calibration, and Concordance</h3>
+    <p>To test whether immune-associated survival attenuation extends beyond melanoma, we ran the identical pipeline across four additional TCGA cohorts of primary solid tumors (<code>01A</code>/<code>01B</code> after removing <code>11A</code>/<code>11B</code> normals): head and neck (TCGA-HNSC, <em>n</em> = 527, 224 deaths; 64,044 CpGs), lung adenocarcinoma (TCGA-LUAD, <em>n</em> = 437, 158 deaths; 62,060 CpGs), bladder (TCGA-BLCA, <em>n</em> = 407, 180 deaths; 63,201 CpGs), and liver (TCGA-LIHC, <em>n</em> = 371, 133 deaths; 64,673 CpGs) (Table 3, Figure 2C).</p>
+
+    <p>Across all five cancers examined, the top three promoter methylation PCs tracked both global mean promoter methylation (<em>r</em> = +0.850 to +0.982) and the 14-gene RNA-seq immune score (PC1–3 multiple <em>R</em> = 0.750 in SKCM, 0.607 in HNSC [PC1–5 <em>R</em> = 0.691], 0.728 in LUAD, 0.732 in BLCA, and 0.574 in LIHC [PC1–5 <em>R</em> = 0.639]; all <em>p</em> &lt; 10<sup>&minus;16</sup>; Table 3). However, comparing direct RNA-seq immune-score adjustment against 5-PC adjustment revealed a key distinction (Table 3, Figure 2C). Because the top five promoter PCs capture broader variation—including global methylation, tumor purity, sex, and molecular subtype—<strong>5-PC adjustment is not specific to prognostic immune infiltration</strong>: it attenuated 99.2% of clinical-only hits in SKCM (retaining 42/4,956), 73.3% in HNSC (4/15), 100.0% in LIHC (0/83), 77.0% in BLCA (14/61), and 28.2% in LUAD (61/85). By contrast, <strong>the contrast between melanoma and the four other cohorts rests on direct RNA-seq immune-score adjustment alone</strong>, and in the four non-melanoma cohorts the baseline clinical-only denominators in the RNA-matched subsets are small (11 in HNSC, 59 in LIHC, 79 in BLCA, and 91 in LUAD, vs. 5,279 in SKCM; Table 3). In TCGA-SKCM, where the 14-gene immune score was strongly protective (HR = 0.681, <em>p</em> = 6.99 &times; 10<sup>&minus;8</sup>), direct RNA immune adjustment attenuated 99.96% of clinical-only hits (retaining 2/5,279 CpGs). In HNSC (HR = 0.865, <em>p</em> = 0.0367), LIHC (HR = 0.866, <em>p</em> = 0.118), BLCA (HR = 0.904, <em>p</em> = 0.189), and LUAD (HR = 0.925, <em>p</em> = 0.327), where the immune score was not strongly prognostic, RNA immune adjustment attenuated 0% of the baseline clinical-only hits (retaining 11/11, 59/59, 79/79, and 91/91; Figure 2C). Across 50 survival-time permutations (<code>OS.time</code>, <code>OS</code>) per model and cohort with covariates and methylation fixed, <strong>nominal <em>p</em>-values were near-calibrated (mean 5.18–6.51% at <em>p</em> &lt; 0.05; median 0–3 hits at <em>q</em> &lt; 0.05), but <em>q</em>-values were anti-conservative because of correlated probe blocks, with 28–78% of permutations (14/50 to 39/50; vs. ~5% expected under independent tests) yielding at least one false discovery at <em>q</em> &lt; 0.05</strong> and mean false-positive counts of 0.76–48.2 across adjusted models (e.g., 4.08–20.06 in LIHC and 1.92–15.56 in LUAD; Table 3). Because the non-melanoma baseline counts (11, 59, 79, and 91 hits) are comparable in size to these null false-positive means, the 0% attenuation (100% retention) in those four cohorts is not informative on its own and may reflect noise-level baseline hit sets, further underscoring that the cross-cancer contrast rests on melanoma. Conversely, the large post-adjustment count increases in several models—such as LIHC rising from 59 to 559 and BLCA from 79 to 401 under RNA immune adjustment, or HNSC from 15 to 772 and LUAD from 85 to 695 under 3-PC adjustment—far exceed the permutation null means and likely reflect real covariate-conditioned signal (whether from variance reduction or statistical suppression) rather than null FDR inflation.</p>
+
+    <div class="figure-box">
+        <img src="km_curve.png" alt="Figure 2: Composition and Immune Attenuation, Transcriptomic Validation, 5-Cancer Generalization, and Candidate Survival Curves">
+        <div class="fig-caption"><strong>Fig. 2 Immune and PC attenuation, transcriptomic validation, 5-cancer comparison, and candidate survival curves.</strong> (A) Log-scale bar chart of promoter CpGs in TCGA-SKCM (<em>n</em> = 456) at <em>q</em> &lt; 0.05 after clinical (4,956), biopsy-site (4,281), 3-PC (49), 5-PC (78), or RNA immune (2 in <em>n</em> = 454) adjustment. (B) Promoter methylation PC2 vs. RNA-seq immune score in TCGA-SKCM (<em>n</em> = 454; <em>r</em> = +0.715, <em>p</em> = 2.6 &times; 10<sup>&minus;72</sup>; non-LN <em>r</em> = +0.692, LN <em>r</em> = +0.722) and 5-fold CV C-index. (C) Percentage of clinical-only hits attenuated by RNA immune adjustment (red circles; 99.96% in SKCM vs. 0% in other four) vs. 5-PC adjustment (green squares; 28.2–100% across all five) plotted against immune score survival HR (labels: RNA-matched / full-cohort baseline clinical hits). (D–F) Median-split Kaplan-Meier curves (95% CIs) in TCGA-SKCM for <em>KRAS</em> (<code>cg23152216</code>), <em>APOL3</em> (<code>cg06703343</code>), and <em>CRABP2</em> (<code>cg02363950</code>).</div>
+    </div>
+
+    <p>To test whether promoter CpGs predict survival differently in immune-hot vs. immune-cold melanomas, we evaluated CpG &times; immune-score interactions and median-split subgroups across our pre-specified 50/50 discovery (<em>n</em> = 227, 110 deaths) and validation (<em>n</em> = 227, 110 deaths) split in TCGA-SKCM. Across all 67,102 promoter CpGs, <strong>0 CpGs reached <em>q</em> &lt; 0.05 for a CpG &times; immune-score interaction</strong> in the discovery half (min <em>p</em> = 6.88 &times; 10<sup>&minus;6</sup>), validation half (min <em>p</em> = 3.18 &times; 10<sup>&minus;6</sup>), or full cohort (min <em>p</em> = 1.36 &times; 10<sup>&minus;5</sup>), and only 1 of 356 nominal discovery interaction candidates (<em>p</em> &lt; 10<sup>&minus;3</sup>) was concordant at <em>p</em> &lt; 0.05 in validation (~8.9 expected by chance; 0 at validation FDR &lt; 0.05). Subgroup screens in immune-cold (<em>n</em> = 227) and immune-hot (<em>n</em> = 227) tumors similarly yielded 0 hits at <em>q</em> &lt; 0.05 in the full cohort and 0 replicated hits at validation FDR &lt; 0.05, with <em>CRABP2</em> (<code>cg02363950</code>) showing comparable hazard ratios in immune-cold (HR = 0.802, <em>p</em> = 0.0054) and immune-hot (HR = 0.704, <em>p</em> = 0.0068) tumors (interaction <em>p</em> = 0.489). In five-fold cross-validation in TCGA-SKCM, the clinical-only Cox model achieved a held-out C-index of 0.653 &plusmn; 0.056, and adding the 14-gene RNA-seq immune score yielded 0.675 &plusmn; 0.036 (&Delta;C = +0.022, 95% CI: &minus;0.028 to +0.072). Adding the top 50, 100, or 200 composition-adjusted promoter CpGs did not improve held-out concordance over clinical covariates alone (top 50 CpGs: C-index 0.647 &plusmn; 0.039, &Delta;C = &minus;0.006, 95% CI: &minus;0.042 to +0.030) or over clinical covariates plus the RNA immune score (C-index 0.670 &plusmn; 0.021, &Delta;C = &minus;0.005, 95% CI: &minus;0.025 to +0.016; Figure 2B).</p>
+
+    <div class="table-wrapper">
+        <div class="table-title">Table 3 Cross-cancer comparison of promoter methylation PCA, RNA-seq immune infiltration, and survival screening across five TCGA cohorts (n = 2,198)</div>
+        <table class="manuscript-table">
+            <thead>
+                <tr>
+                    <th style="width: 28%;">Metric</th>
+                    <th style="width: 14.4%;" class="center">TCGA-SKCM<br>(Melanoma)</th>
+                    <th style="width: 14.4%;" class="center">TCGA-HNSC<br>(Head &amp; Neck)</th>
+                    <th style="width: 14.4%;" class="center">TCGA-LUAD<br>(Lung Adenocarc.)</th>
+                    <th style="width: 14.4%;" class="center">TCGA-BLCA<br>(Bladder)</th>
+                    <th style="width: 14.4%;" class="center">TCGA-LIHC<br>(Liver)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td class="nowrap">Patients: Full<sup>a</sup> / Deaths / RNA<sup>b</sup></td><td class="center">456 / 221 / 454</td><td class="center">527 / 224 / 519</td><td class="center">437 / 158 / 433</td><td class="center">407 / 180 / 402</td><td class="center">371 / 133 / 365</td></tr>
+                <tr><td class="nowrap">Primary / Metastatic Tumors<sup>a</sup></td><td class="center">99 / 357</td><td class="center">527 / 0</td><td class="center">437 / 0</td><td class="center">407 / 0</td><td class="center">371 / 0</td></tr>
+                <tr><td class="nowrap">Tested Promoter CpGs<sup>a</sup></td><td class="center">67,102</td><td class="center">64,044</td><td class="center">62,060</td><td class="center">63,201</td><td class="center">64,673</td></tr>
+                <tr><td class="nowrap">PC1 <em>r</em> with Mean Promoter &beta;<sup>a</sup></td><td class="center">+0.978 (13.4%)</td><td class="center">+0.960 (17.1%)</td><td class="center">+0.982 (12.4%)</td><td class="center">+0.850 (14.7%)</td><td class="center">+0.933 (16.1%)</td></tr>
+                <tr><td class="nowrap">Strongest Immune PC (<em>r</em>, <em>p</em>)<sup>b</sup></td><td class="center nowrap">PC2: +0.715<br>(2.6 &times; 10<sup>&minus;72</sup>)</td><td class="center nowrap">PC1: +0.487<br>(3.2 &times; 10<sup>&minus;32</sup>)</td><td class="center nowrap">PC2: +0.552<br>(7.9 &times; 10<sup>&minus;36</sup>)</td><td class="center nowrap">PC1: +0.648<br>(3.5 &times; 10<sup>&minus;49</sup>)</td><td class="center nowrap">PC3: +0.421<br>(4.3 &times; 10<sup>&minus;17</sup>)</td></tr>
+                <tr><td class="nowrap">PC1–3 Multiple <em>R</em> (<em>R</em><sup>2</sup>) Immune<sup>b</sup></td><td class="center">0.750 (56.2%)</td><td class="center">0.607 (36.8%)</td><td class="center">0.728 (53.0%)</td><td class="center">0.732 (53.5%)</td><td class="center">0.574 (33.0%)</td></tr>
+                <tr><td class="nowrap">RNA Immune Score &rarr; OS (HR, <em>p</em>)<sup>b</sup></td><td class="center nowrap">0.681 (6.99 &times; 10<sup>&minus;8</sup>)</td><td class="center">0.865 (0.0367)</td><td class="center">0.925 (0.327)</td><td class="center">0.904 (0.189)</td><td class="center">0.866 (0.118)</td></tr>
+                <tr><td class="nowrap">Clinical-Only Hits: Full<sup>a</sup> / RNA<sup>b</sup></td><td class="center">4,956 / 5,279</td><td class="center">15 / 11</td><td class="center">85 / 91</td><td class="center">61 / 79</td><td class="center">83 / 59</td></tr>
+                <tr><td class="nowrap">Clinical + 3 PCs Hits (Ret./Full<sup>a</sup>)<sup>c</sup></td><td class="center">49 (31/4,956)</td><td class="center">772 (15/15)</td><td class="center">695 (85/85)</td><td class="center">130 (45/61)</td><td class="center">53 (17/83)</td></tr>
+                <tr><td class="nowrap">Clinical + 5 PCs Hits (Ret./Full<sup>a</sup>; % Att.)<sup>c</sup></td><td class="center">78 (42; 99.2%)</td><td class="center">4 (4; 73.3%)</td><td class="center">241 (61; 28.2%)</td><td class="center">71 (14; 77.0%)</td><td class="center">0 (0; 100.0%)</td></tr>
+                <tr><td class="nowrap">Clinical + RNA Imm. (Ret./RNA<sup>b</sup>; % Att.)<sup>c</sup></td><td class="center">2 (2/5,279; 99.96%)</td><td class="center">71 (11/11; 0%)</td><td class="center">198 (91/91; 0%)</td><td class="center">401 (79/79; 0%)</td><td class="center">559 (59/59; 0%)</td></tr>
+                <tr><td class="nowrap">Perm. Null % &ge;1 Hit (Med.; Mean)<sup>c</sup></td><td class="center nowrap">56–68% (1–2; 4.6–12.1)</td><td class="center nowrap">28–46% (0; 0.8–1.7)</td><td class="center nowrap">40–48% (0; 1.9–15.6)</td><td class="center nowrap">48–60% (0–2; 4.9–48.2)</td><td class="center nowrap">64–78% (1–3; 4.1–20.1)</td></tr>
+                <tr><td class="nowrap"><em>CRABP2</em> (<code>cg02363950</code>) vs. mRNA<sup>b</sup></td><td class="center nowrap">&minus;0.314 (7.7 &times; 10<sup>&minus;12</sup>)</td><td class="center nowrap">&minus;0.214 (8.6 &times; 10<sup>&minus;7</sup>)</td><td class="center nowrap">&minus;0.188 (8.3 &times; 10<sup>&minus;5</sup>)</td><td class="center nowrap">&minus;0.286 (5.5 &times; 10<sup>&minus;9</sup>)</td><td class="center nowrap">+0.085 (0.104)</td></tr>
+            </tbody>
+        </table>
+        <div class="table-note"><sup>a</sup><strong>Full methylation cohort</strong> (<em>n</em> = 456, 527, 437, 407, 371): used for <code>Clinical + 3 PCs</code> and <code>Clinical + 5 PCs</code> screens; baseline clinical-only <em>q</em> &lt; 0.05 denominators are 4,956 (SKCM; 15,264 at <em>p</em> &lt; 0.05), 15 (HNSC; 7,049 at <em>p</em> &lt; 0.05), 85 (LUAD; 5,395 at <em>p</em> &lt; 0.05), 61 (BLCA; 6,787 at <em>p</em> &lt; 0.05), and 83 (LIHC; 5,894 at <em>p</em> &lt; 0.05). <sup>b</sup><strong>RNA-seq–matched subset</strong> (<em>n</em> = 454, 519, 433, 402, 365): used for immune correlations, <code>RNA Immune Score &rarr; OS</code>, and <code>Clinical + RNA Immune</code> screens; re-running the clinical-only Cox screen on this exact subset yields 5,279 (SKCM), 11 (HNSC), 91 (LUAD), 79 (BLCA), and 59 (LIHC) baseline hits at <em>q</em> &lt; 0.05, which serve as the denominators for RNA immune-adjusted retention. <sup>c</sup><strong>Permutation calibration</strong> (50 survival-time permutations per model and cohort with covariates and methylation fixed): nominal <em>p</em>-values were near-calibrated (5.18–6.51% at <em>p</em> &lt; 0.05), but <em>q</em>-values were anti-conservative because of correlated probe blocks, with 28–78% of permutations yielding &ge; 1 false discovery at <em>q</em> &lt; 0.05 (vs. ~5% expected under independent tests; median 0–3, mean 0.76–48.2 across adjusted models; 105.0 in clinical-only SKCM).</div>
+    </div>
+
+    <h3>Candidate Loci, Regulator Enrichment, and <em>CRABP2</em> Mediation Analysis</h3>
+    <p>Table 2 lists the top 12 promoter CpGs in TCGA-SKCM ranked by 5-PC-adjusted <em>p</em>-value alongside the immune-adjusted survivor <em>DYSFIP1</em> (<code>cg03750525</code>, 5-PC <em>q</em> = 0.0322) and the pilot locus <em>ZCCHC11</em> (<code>cg00754357</code>; clinical <em>q</em> = 7.15 &times; 10<sup>&minus;4</sup>; 5-PC <em>q</em> = 0.0741). Across all 65,227 promoter CpGs mapped to expressed genes in TCGA-SKCM <code>HiSeqV2</code> RNA-seq (<em>n</em> = 454), 39.5% (25,787 probes) had a negative immune-adjusted partial correlation (<em>r</em><sub>partial</sub> &lt; 0, <em>q</em> &lt; 0.05) and <strong>23.2% (15,126 probes)</strong> had a moderate-to-strong inverse correlation (<em>r</em><sub>partial</sub> &lt; &minus;0.20, <em>q</em> &lt; 0.05; mean <em>r</em><sub>partial</sub> = &minus;0.079). Among the 77 mapped 5-PC-adjusted survival hits (<em>q</em> &lt; 0.05), <strong>36.4% (28/77)</strong> exhibited <em>r</em><sub>partial</sub> &lt; &minus;0.20, <em>q</em> &lt; 0.05, enriched over both the full array background (OR = 1.89, Fisher's exact <em>p</em> = 0.0096) and 1,000 random CpG sets matched on probe SD(&beta;) and mean &beta; deciles (matched null mean 23.7%, 95% interval 14.3–33.8%, empirical <em>p</em> = 0.0090). Those 28 inverse-correlated 5-PC hits included <strong>three <em>CRABP2</em> promoter probes</strong> (<code>cg02363950</code> <em>r</em><sub>partial</sub> = &minus;0.321; <code>cg24251193</code> <em>r</em><sub>partial</sub> = &minus;0.257; <code>cg17165580</code> <em>r</em><sub>partial</sub> = &minus;0.239) and five <em>SERPINE2</em> promoter probes (<em>r</em><sub>partial</sub> = &minus;0.238 to &minus;0.326). Similarly, the 226 mapped nominal hits (<em>p</em> &lt; 10<sup>&minus;3</sup>) from the RNA-seq immune-adjusted Cox screen were enriched for inverse mRNA correlations (34.1% [77/226], OR = 1.72, Fisher <em>p</em> = 1.93 &times; 10<sup>&minus;4</sup>, matched-null <em>p</em> = 0.0010).</p>
+
+    <p>Among individual candidates (Table 2), <strong><em>CRABP2</em> (<code>cg02363950</code>)</strong> showed a consistent negative correlation with <em>CRABP2</em> mRNA before (<em>r</em> = &minus;0.314, <em>p</em> = 7.72 &times; 10<sup>&minus;12</sup>; Spearman &rho; = &minus;0.307) and after adjusting for the RNA-seq immune score (<em>r</em><sub>partial</sub> = &minus;0.321, <em>p</em> = 2.63 &times; 10<sup>&minus;12</sup>) or PC1–5 (<em>r</em><sub>partial</sub> = &minus;0.227, <em>p</em> = 9.73 &times; 10<sup>&minus;7</sup>), carried no manifest SNP flags, and replicated its negative mRNA correlation in TCGA-HNSC (<em>r</em> = &minus;0.214), TCGA-LUAD (<em>r</em> = &minus;0.188), and TCGA-BLCA (<em>r</em> = &minus;0.286), though not in TCGA-LIHC (<em>r</em> = +0.085, <em>p</em> = 0.104; Table 3). By contrast, neither of the two loci surviving FDR &lt; 0.05 after direct RNA-seq immune adjustment correlated with its bulk mRNA: <strong><em>DYSFIP1</em> (<code>cg03750525</code>)</strong> showed <em>r</em> = +0.024 (<em>p</em> = 0.608; immune-adjusted <em>r</em><sub>partial</sub> = +0.040) and <strong><em>KRAS</em> (<code>cg23152216</code>)</strong> showed <em>r</em> = &minus;0.004 (<em>p</em> = 0.940; immune-adjusted <em>r</em><sub>partial</sub> = &minus;0.033; 10-bp SNP flag <code>rs61759611</code>; Table 2). <em>APOL3</em>, <em>IGFL4</em>, <em>GABRB3</em>, and <em>CX3CR1</em> displayed positive methylation–expression correlations (<em>r</em><sub>partial</sub> = +0.155 to +0.285). In proportional-hazards checks (CpG &times; log(time)), <em>CRABP2</em> (<em>p</em> = 0.32), <em>LOC286094</em> (<em>p</em> = 0.12), <em>CPA6</em> (<em>p</em> = 0.095), <em>APOL3</em> <code>cg15245051</code> (<em>p</em> = 0.39), <em>GABRB3</em> (<em>p</em> = 0.093), and <em>CX3CR1</em> (<em>p</em> = 0.70) showed no evidence of non-proportional hazards, whereas <em>KRAS</em>, <em>PDE2A</em>, and <em>ZCCHC11</em> showed late follow-up attenuation (&gt; 10 years; Figure 2D).</p>
+
+    <p>Because <em>CRABP2</em> (<code>cg02363950</code>) was the strongest composition-adjusted candidate with an immune-independent inverse mRNA correlation, we tested whether <em>CRABP2</em> mRNA expression itself predicts survival and mediates the <code>cg02363950</code> survival association (<em>n</em> = 454). Although higher <em>CRABP2</em> mRNA showed a weak trend toward higher hazard (HR &gt; 1), <strong><em>CRABP2</em> mRNA expression did not significantly predict overall survival</strong> in clinical-only (HR = 1.11 per SD, 95% CI: 0.96–1.29, <em>p</em> = 0.149), clinical-plus-immune (HR = 1.11, 95% CI: 0.95–1.28, <em>p</em> = 0.185), or clinical-plus-5-PC (HR = 1.15, 95% CI: 0.97–1.36, <em>p</em> = 0.107) Cox models. In joint Cox models containing both <code>cg02363950</code> methylation and <em>CRABP2</em> mRNA, <code>cg02363950</code> retained its survival association without attenuation: in the clinical-plus-immune model, HR = 0.772 (<em>p</em> = 2.14 &times; 10<sup>&minus;4</sup>) vs. 0.774 (<em>p</em> = 9.16 &times; 10<sup>&minus;5</sup>) alone, with indirect effect <em>a</em> &times; <em>b</em> = +0.0025 (1,000-resample bootstrap 95% CI: &minus;0.0418 to +0.0471; Sobel <em>z</em> = +0.115, <em>p</em> = 0.908); in the clinical-plus-5-PC model, HR = 0.673 (<em>p</em> = 1.29 &times; 10<sup>&minus;6</sup>) vs. 0.666 (<em>p</em> = 5.00 &times; 10<sup>&minus;7</sup>) alone, with <em>a</em> &times; <em>b</em> = &minus;0.0111 (bootstrap 95% CI: &minus;0.0423 to +0.0141; Sobel <em>z</em> = &minus;0.861, <em>p</em> = 0.389); and in the clinical-only model, <em>a</em> &times; <em>b</em> = &minus;0.0064 (bootstrap 95% CI: &minus;0.0510 to +0.0358; Sobel <em>p</em> = 0.762). Thus, while the Sobel test is low-powered, both nonparametric bootstrap CIs and negligible HR attenuation indicate no evidence that bulk steady-state <em>CRABP2</em> mRNA mediates the survival association of <code>cg02363950</code>.</p>
+
+    <div class="table-wrapper">
+        <div class="table-title">Table 2 Leading candidate promoter CpG sites associated with overall survival in TCGA-SKCM (n = 456) and matched mRNA correlations (n = 454)</div>
+        <table class="manuscript-table">
+            <thead>
+                <tr>
+                    <th class="center">#</th>
+                    <th>Probe ID</th>
+                    <th>Gene</th>
+                    <th class="center">Clin<br>HR</th>
+                    <th class="center">Clin<br><em>p</em></th>
+                    <th class="center">Clin<br><em>q</em></th>
+                    <th class="center">5-PC<br>HR</th>
+                    <th class="center">5-PC<br><em>p</em></th>
+                    <th class="center">5-PC <em>q</em><br>(No-SNP <em>q</em>)</th>
+                    <th class="center">mRNA <em>r</em><br>(<em>p</em>)</th>
+                    <th class="center">Imm-Adj <em>r</em><br>(<em>p</em>)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td class="center">1</td><td class="nowrap">cg06703343</td><td><em>APOL3</em></td><td class="center">0.80</td><td class="center nowrap">1.59 &times; 10<sup>&minus;3</sup></td><td class="center">0.0312</td><td class="center">0.60</td><td class="center nowrap">2.84 &times; 10<sup>&minus;8</sup></td><td class="center nowrap">0.0019<br>(0.0016)</td><td class="center nowrap">+0.095<br>(0.043)</td><td class="center nowrap">+0.171<br>(2.5 &times; 10<sup>&minus;4</sup>)</td></tr>
+                <tr><td class="center">2</td><td class="nowrap">cg25053164</td><td><em>LOC286094</em></td><td class="center">0.69</td><td class="center nowrap">6.19 &times; 10<sup>&minus;6</sup></td><td class="center">0.0024</td><td class="center">0.64</td><td class="center nowrap">1.94 &times; 10<sup>&minus;7</sup></td><td class="center nowrap">0.0054<br>(0.0056)</td><td class="center nowrap">+0.019<br>(0.689)</td><td class="center nowrap">+0.023<br>(0.631)</td></tr>
+                <tr><td class="center">3</td><td class="nowrap">cg02363950</td><td><em>CRABP2</em></td><td class="center">0.79</td><td class="center nowrap">4.59 &times; 10<sup>&minus;4</sup></td><td class="center">0.0159</td><td class="center">0.64</td><td class="center nowrap">2.92 &times; 10<sup>&minus;7</sup></td><td class="center nowrap">0.0054<br>(0.0056)</td><td class="center nowrap">&minus;0.314<br>(7.7 &times; 10<sup>&minus;12</sup>)</td><td class="center nowrap">&minus;0.321<br>(2.6 &times; 10<sup>&minus;12</sup>)</td></tr>
+                <tr><td class="center">4</td><td class="nowrap">cg23152216<sup>a</sup></td><td><em>KRAS</em></td><td class="center">0.64</td><td class="center nowrap">1.47 &times; 10<sup>&minus;10</sup></td><td class="center nowrap">9.89 &times; 10<sup>&minus;6</sup></td><td class="center">0.66</td><td class="center nowrap">3.22 &times; 10<sup>&minus;7</sup></td><td class="center nowrap">0.0054<br>(Excl. SNP)</td><td class="center nowrap">&minus;0.004<br>(0.940)</td><td class="center nowrap">&minus;0.033<br>(0.490)</td></tr>
+                <tr><td class="center">5</td><td class="nowrap">cg21860285</td><td><em>CPA6</em></td><td class="center">0.78</td><td class="center nowrap">3.48 &times; 10<sup>&minus;4</sup></td><td class="center">0.0136</td><td class="center">0.63</td><td class="center nowrap">7.45 &times; 10<sup>&minus;7</sup></td><td class="center nowrap">0.0084<br>(0.0083)</td><td class="center nowrap">+0.094<br>(0.045)</td><td class="center nowrap">+0.017<br>(0.718)</td></tr>
+                <tr><td class="center">6</td><td class="nowrap">cg14790396</td><td><em>PDE2A</em></td><td class="center">0.77</td><td class="center nowrap">2.21 &times; 10<sup>&minus;5</sup></td><td class="center">0.0038</td><td class="center">0.67</td><td class="center nowrap">8.42 &times; 10<sup>&minus;7</sup></td><td class="center nowrap">0.0084<br>(0.0083)</td><td class="center nowrap">+0.079<br>(0.094)</td><td class="center nowrap">+0.067<br>(0.156)</td></tr>
+                <tr><td class="center">7</td><td class="nowrap">cg05664072</td><td><em>PER2</em></td><td class="center">0.76</td><td class="center nowrap">1.84 &times; 10<sup>&minus;5</sup></td><td class="center">0.0035</td><td class="center">0.62</td><td class="center nowrap">8.72 &times; 10<sup>&minus;7</sup></td><td class="center nowrap">0.0084<br>(0.0083)</td><td class="center nowrap">&minus;0.060<br>(0.201)</td><td class="center nowrap">&minus;0.060<br>(0.199)</td></tr>
+                <tr><td class="center">8</td><td class="nowrap">cg13095627</td><td><em>IGFL4</em></td><td class="center">0.66</td><td class="center nowrap">1.06 &times; 10<sup>&minus;8</sup></td><td class="center">0.0002</td><td class="center">0.71</td><td class="center nowrap">1.51 &times; 10<sup>&minus;6</sup></td><td class="center nowrap">0.0124<br>(0.0120)</td><td class="center nowrap">+0.225<br>(1.2 &times; 10<sup>&minus;6</sup>)</td><td class="center nowrap">+0.230<br>(7.7 &times; 10<sup>&minus;7</sup>)</td></tr>
+                <tr><td class="center">9</td><td class="nowrap">cg15245051</td><td><em>APOL3</em></td><td class="center">0.83</td><td class="center nowrap">6.74 &times; 10<sup>&minus;3</sup></td><td class="center">0.0710</td><td class="center">0.66</td><td class="center nowrap">1.67 &times; 10<sup>&minus;6</sup></td><td class="center nowrap">0.0124<br>(0.0120)</td><td class="center nowrap">+0.139<br>(0.003)</td><td class="center nowrap">+0.285<br>(6.4 &times; 10<sup>&minus;10</sup>)</td></tr>
+                <tr><td class="center">10</td><td class="nowrap">cg14222314</td><td><em>GABRB3</em></td><td class="center">1.23</td><td class="center nowrap">1.58 &times; 10<sup>&minus;3</sup></td><td class="center">0.0311</td><td class="center">1.44</td><td class="center nowrap">1.97 &times; 10<sup>&minus;6</sup></td><td class="center nowrap">0.0132<br>(0.0126)</td><td class="center nowrap">+0.246<br>(1.0 &times; 10<sup>&minus;7</sup>)</td><td class="center nowrap">+0.262<br>(1.5 &times; 10<sup>&minus;8</sup>)</td></tr>
+                <tr><td class="center">11</td><td class="nowrap">cg24130739</td><td><em>CX3CR1</em></td><td class="center">0.81</td><td class="center nowrap">2.57 &times; 10<sup>&minus;3</sup></td><td class="center">0.0407</td><td class="center">0.66</td><td class="center nowrap">2.37 &times; 10<sup>&minus;6</sup></td><td class="center nowrap">0.0144<br>(0.0136)</td><td class="center nowrap">+0.199<br>(1.9 &times; 10<sup>&minus;5</sup>)</td><td class="center nowrap">+0.155<br>(9.0 &times; 10<sup>&minus;4</sup>)</td></tr>
+                <tr><td class="center">12</td><td class="nowrap">cg17720013</td><td><em>IGFL4</em></td><td class="center">0.69</td><td class="center nowrap">4.29 &times; 10<sup>&minus;7</sup></td><td class="center">0.0009</td><td class="center">0.71</td><td class="center nowrap">3.07 &times; 10<sup>&minus;6</sup></td><td class="center nowrap">0.0158<br>(0.0146)</td><td class="center nowrap">+0.228<br>(9.2 &times; 10<sup>&minus;7</sup>)</td><td class="center nowrap">+0.228<br>(8.7 &times; 10<sup>&minus;7</sup>)</td></tr>
+                <tr><td class="center">—</td><td class="nowrap">cg03750525<sup>b</sup></td><td><em>DYSFIP1</em></td><td class="center">0.69</td><td class="center nowrap">1.13 &times; 10<sup>&minus;7</sup></td><td class="center">0.0005</td><td class="center">0.71</td><td class="center nowrap">2.22 &times; 10<sup>&minus;5</sup></td><td class="center nowrap">0.0322<br>(0.0322)</td><td class="center nowrap">+0.024<br>(0.608)</td><td class="center nowrap">+0.040<br>(0.396)</td></tr>
+                <tr><td class="center">—</td><td class="nowrap">cg00754357</td><td><em>ZCCHC11</em></td><td class="center">0.70</td><td class="center nowrap">2.03 &times; 10<sup>&minus;7</sup></td><td class="center">0.0007</td><td class="center">0.73</td><td class="center nowrap">1.91 &times; 10<sup>&minus;4</sup></td><td class="center nowrap">0.0741<br>(0.0751)</td><td class="center nowrap">&minus;0.098<br>(0.038)</td><td class="center nowrap">&minus;0.129<br>(0.0059)</td></tr>
+            </tbody>
+        </table>
+        <div class="table-note"><sup>a</sup><code>cg23152216</code> (<em>KRAS</em>) carries an Illumina manifest <code>Probe_SNPs_10</code> flag (<code>rs61759611</code>); none of the other 13 probes carry <code>Probe_SNPs</code> or <code>Probe_SNPs_10</code> flags. <sup>b</sup><code>cg03750525</code> (<em>DYSFIP1</em>) is one of two CpGs (with <code>cg23152216</code>) reaching <em>q</em> &lt; 0.05 after direct RNA-seq immune-score adjustment (<em>q</em> = 0.0216).</div>
+    </div>
+
+    <h3>Melanoma Versus Nevus Classification in GSE120878 and External Stress Testing</h3>
+    <p>In GSE120878 (89 primary FFPE melanomas and 73 benign nevi), classifiers using in-fold Welch <em>t</em>-statistic feature selection achieved held-out ROC-AUC between 0.992 and 0.998 across five-fold cross-validation repeated twice (Table 4, Figure 3). Promoter-only models performed at least as well as models using the 60,000 highest-variance array probes: 10-CpG L1 logistic regression reached an AUC of 0.996 &plusmn; 0.005 (accuracy 95.7% &plusmn; 2.1%), 50- and 200-CpG random forests reached 0.998 &plusmn; 0.003–0.004 (accuracy 96.9% &plusmn; 2.4–2.8%), and a 40-CpG ElasticNet (<code>l1_ratio = 0.5</code>) promoter model achieved 0.998 &plusmn; 0.002 (accuracy 96.3% &plusmn; 1.9%, sensitivity 95.5%, specificity 97.2%), comparable to the split-sample validation of Conway et al. [9] (AUC 0.996). The top 10 differentially methylated promoter probes ranked by |Welch <em>t</em>| lay in developmental homeobox and paired-box transcription factors—<em>HOXD13</em> (<code>cg10418524</code>, <em>t</em> = +20.95, &Delta;&beta; = +0.399; <code>cg07802350</code>, <em>t</em> = +16.61, &Delta;&beta; = +0.289), <em>PAX3</em> (<code>cg19352038</code>, <em>t</em> = +18.32, &Delta;&beta; = +0.349; <code>cg16529477</code>, <em>t</em> = +18.22, &Delta;&beta; = +0.410; <code>cg18077971</code>, <em>t</em> = +18.03, &Delta;&beta; = +0.437), <em>PAX6</em> (<code>cg09656389</code>, <em>t</em> = +16.63, &Delta;&beta; = +0.376), <em>EVX2</em> (<code>cg26149275</code>, <em>t</em> = +15.70, &Delta;&beta; = +0.334), and <em>TLX3</em> (<code>cg05787556</code>, <em>t</em> = +15.68, &Delta;&beta; = +0.319)—plus <em>SLC25A2</em> (<code>cg05845376</code>, <em>t</em> = +16.49, &Delta;&beta; = +0.435) and <em>REXO1L2P</em> (<code>cg27030541</code>, <em>t</em> = &minus;15.85, &Delta;&beta; = &minus;0.223), with nine of 10 hypermethylated in melanoma (Figure 3B, Table 4).</p>
+
+    <div class="table-wrapper">
+        <div class="table-title">Table 4 Diagnostic classifier performance in GSE120878 (5-fold cross-validation repeated twice) and external testing on TCGA-SKCM and GSE122909</div>
+        <table class="manuscript-table">
+            <thead>
+                <tr>
+                    <th>Probe Set</th>
+                    <th class="center"><em>k</em></th>
+                    <th>Classifier Model</th>
+                    <th class="center">GSE120878<br>CV AUC</th>
+                    <th class="center">GSE120878<br>CV Acc (%)</th>
+                    <th class="center">TCGA-SKCM Sens:<br>All / Prim / Met (%)</th>
+                    <th class="center">GSE122909 Test<br>AUC (95% CI)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td class="nowrap">Promoter-Only</td><td class="center">10</td><td>L1 Logistic Regression</td><td class="center nowrap">0.996 &plusmn; 0.005</td><td class="center nowrap">95.7% &plusmn; 2.1%</td><td class="center nowrap">88.8% / 96.0% / 86.8%</td><td class="center nowrap">0.500 (0.20–0.80)</td></tr>
+                <tr><td class="nowrap">Promoter-Only</td><td class="center">10</td><td>Random Forest</td><td class="center nowrap">0.995 &plusmn; 0.008</td><td class="center nowrap">96.0% &plusmn; 2.4%</td><td class="center nowrap">93.0% / 98.0% / 91.6%</td><td class="center nowrap">0.455 (0.18–0.75)</td></tr>
+                <tr><td class="nowrap">Promoter-Only</td><td class="center">40</td><td>ElasticNet (Conway-style)</td><td class="center nowrap">0.998 &plusmn; 0.002</td><td class="center nowrap">96.3% &plusmn; 1.9%</td><td class="center nowrap">99.3% / 99.0% / 99.4%</td><td class="center nowrap">0.482 (0.18–0.79)</td></tr>
+                <tr><td class="nowrap">Promoter-Only</td><td class="center">50</td><td>L1 Logistic Regression</td><td class="center nowrap">0.998 &plusmn; 0.003</td><td class="center nowrap">96.0% &plusmn; 3.1%</td><td class="center nowrap">98.0% / 99.0% / 97.8%</td><td class="center nowrap">0.446 (0.16–0.75)</td></tr>
+                <tr><td class="nowrap">Promoter-Only</td><td class="center">50</td><td>Random Forest</td><td class="center nowrap">0.998 &plusmn; 0.004</td><td class="center nowrap">96.9% &plusmn; 2.4%</td><td class="center nowrap">98.9% / 99.0% / 98.9%</td><td class="center nowrap">0.446 (0.13–0.77)</td></tr>
+                <tr><td class="nowrap">Promoter-Only</td><td class="center">200</td><td>L1 Logistic Regression</td><td class="center nowrap">0.998 &plusmn; 0.003</td><td class="center nowrap">96.9% &plusmn; 3.1%</td><td class="center nowrap">99.6% / 100.0% / 99.4%</td><td class="center nowrap">0.464 (0.16–0.77)</td></tr>
+                <tr><td class="nowrap">Promoter-Only</td><td class="center">200</td><td>Random Forest</td><td class="center nowrap">0.998 &plusmn; 0.003</td><td class="center nowrap">96.9% &plusmn; 2.8%</td><td class="center nowrap">99.6% / 100.0% / 99.4%</td><td class="center nowrap">0.491 (0.18–0.79)</td></tr>
+                <tr><td class="nowrap">All-Probes (60k)</td><td class="center">10</td><td>L1 Logistic Regression</td><td class="center nowrap">0.993 &plusmn; 0.008</td><td class="center nowrap">95.7% &plusmn; 3.1%</td><td class="center">—</td><td class="center">—</td></tr>
+                <tr><td class="nowrap">All-Probes (60k)</td><td class="center">10</td><td>Random Forest</td><td class="center nowrap">0.993 &plusmn; 0.009</td><td class="center nowrap">95.7% &plusmn; 3.7%</td><td class="center">—</td><td class="center">—</td></tr>
+                <tr><td class="nowrap">All-Probes (60k)</td><td class="center">50</td><td>L1 Logistic Regression</td><td class="center nowrap">0.992 &plusmn; 0.006</td><td class="center nowrap">95.1% &plusmn; 2.0%</td><td class="center">—</td><td class="center">—</td></tr>
+                <tr><td class="nowrap">All-Probes (60k)</td><td class="center">50</td><td>Random Forest</td><td class="center nowrap">0.997 &plusmn; 0.004</td><td class="center nowrap">96.9% &plusmn; 2.4%</td><td class="center">—</td><td class="center">—</td></tr>
+                <tr><td class="nowrap">All-Probes (60k)</td><td class="center">200</td><td>L1 Logistic Regression</td><td class="center nowrap">0.996 &plusmn; 0.007</td><td class="center nowrap">95.7% &plusmn; 2.5%</td><td class="center">—</td><td class="center">—</td></tr>
+                <tr><td class="nowrap">All-Probes (60k)</td><td class="center">200</td><td>Random Forest</td><td class="center nowrap">0.998 &plusmn; 0.003</td><td class="center nowrap">97.8% &plusmn; 2.4%</td><td class="center">—</td><td class="center">—</td></tr>
+            </tbody>
+        </table>
+        <div class="table-note">Note: Across the 9 hypermethylated top-10 diagnostic probes (<em>HOXD13</em>, <em>PAX3</em>, <em>PAX6</em>, <em>SLC25A2</em>, <em>EVX2</em>, <em>TLX3</em>), cross-cohort mean &beta;-values were 0.236 in GSE120878 nevi (<em>n</em> = 73), 0.608 in GSE120878 melanomas (<em>n</em> = 89), 0.650 in TCGA-SKCM (<em>n</em> = 456), 0.460 in GSE122909 tissue melanomas (<em>n</em> = 7), 0.476 in GSE122909 cultured melanocytes (<em>n</em> = 8), and 0.462 in GSE122909 melanoma cell lines (<em>n</em> = 4).</div>
+    </div>
+
+    <p>When promoter-only classifiers trained on GSE120878 were applied to TCGA-SKCM (<em>n</em> = 456), sensitivity ranged from 88.8% (96.0% primary, 86.8% metastatic) for 10-CpG L1 logistic regression up to 98.0–99.6% (99.0–100.0% primary, 97.8–99.4% metastatic) for 40-, 50-, and 200-CpG models (Table 4). By contrast, when stress-tested on GSE122909 (<em>n</em> = 15: 7 tissue melanomas vs. 8 cultured melanocyte samples; Fujiwara et al. [10]), test ROC-AUC ranged from 0.446 to 0.500 (95% bootstrap CIs: 0.13–0.80; Table 4, Figure 3A), showing no discrimination between tissue melanomas and cultured melanocytes (with 4 of 8 cultured melanocyte samples classified as melanoma). Cross-cohort comparison of the nine hypermethylated diagnostic probes (Table 4 note) showed low methylation in GSE120878 benign nevi (&beta;&#772; = 0.236) and high methylation in GSE120878 melanomas (&beta;&#772; = 0.608) and TCGA-SKCM melanomas (&beta;&#772; = 0.650), whereas GSE122909 tissue melanomas (&beta;&#772; = 0.460), cultured normal melanocytes (&beta;&#772; = 0.476), and melanoma cell lines (&beta;&#772; = 0.462) all showed intermediate methylation. Across 13,243 common high-variance promoter CpGs, 1,191 probes (8.99%) met |&Delta;&beta;| &gt; 0.20, <em>p</em> &lt; 0.01 in GSE120878 and 10 probes (0.08%) met those thresholds in GSE122909 (<em>n</em> = 15), yielding a single concordant probe (<code>cg25864024</code> in <em>FAM174B</em>) vs. ~0.45 expected by chance.</p>
+
+    <div class="figure-box">
+        <img src="ml_classifier_accuracy.png" alt="Figure 3: Cross-Validation Performance, External Stress Test, and Top Diagnostic Promoter Features">
+        <div class="fig-caption"><strong>Fig. 3 Diagnostic cross-validation performance, external stress test, and top promoter features.</strong> (A) ROC-AUC on a full 0.0–1.0 scale comparing held-out 5-fold cross-validation performance (repeated twice) in GSE120878 (melanoma vs. benign nevus; blue bars, AUC 0.995–0.998) against external stress-test performance in GSE122909 (tissue melanoma vs. cultured melanocytes; orange bars, AUC 0.446–0.500) for L1-penalized logistic regression, ElasticNet, and random forest classifiers using <em>k</em> &isin; {10, 40, 50, 200} promoter CpGs. (B) Top 10 promoter CpGs ranked by absolute Welch <em>t</em>-statistic in GSE120878 (red: hypermethylated in melanoma; blue: hypomethylated in melanoma).</div>
+    </div>
+
+    <h2>Discussion</h2>
+
+    <h3>Attenuation of Bulk Methylation-Survival Signals and Five-Cancer Comparison</h3>
+    <p>A central finding of our study is that the survival signal spanning 4,956 promoter CpGs in clinical-only Cox models of TCGA-SKCM is strongly attenuated when adjusting for promoter methylation PCs (leaving 49 and 78 CpGs with 3 and 5 PCs; 99.4% and 99.2% of clinical-only hits attenuated) or for a matched RNA-seq immune infiltration score (leaving 2 CpGs at <em>q</em> &lt; 0.05; 99.96% attenuated). Addressing the competing hypothesis that this signal reflects lymph node vs. cutaneous biopsy site in TCGA-SKCM, we found that PC2 tracks the 14-gene RNA-seq immune score strongly within both non-lymph-node tumors (<em>r</em> = +0.692) and lymph node biopsies (<em>r</em> = +0.722), and that adjusting for categorical biopsy site leaves 4,281 FDR-significant CpGs (attenuating only 13.6%), whereas adding PCs or the RNA immune score on top of biopsy site collapses hits to 115 and 2 CpGs.</p>
+
+    <p>Applying the identical pipeline across five TCGA cohorts—TCGA-SKCM (<em>n</em> = 456), TCGA-HNSC (<em>n</em> = 527), TCGA-LUAD (<em>n</em> = 437), TCGA-BLCA (<em>n</em> = 407), and TCGA-LIHC (<em>n</em> = 371)—highlighted a critical distinction between unsupervised methylation PC adjustment and direct RNA-seq immune-score adjustment (Table 3, Figure 2C). In all five cancers examined, the top three promoter PCs tracked both global mean promoter methylation (<em>r</em> = +0.850 to +0.982) and the 14-gene immune score (PC1–3 multiple <em>R</em> = 0.574–0.750). However, 5-PC adjustment attenuated clinical-only survival hits not only in melanoma (99.2% removed), where the immune score is strongly prognostic (HR = 0.681, <em>p</em> = 6.99 &times; 10<sup>&minus;8</sup>), but also in HNSC (73.3% removed), LIHC (100.0% removed), BLCA (77.0% removed), and LUAD (28.2% removed), where the immune score is weakly or non-significantly associated with survival (HR = 0.865–0.925, <em>p</em> = 0.037–0.327). Thus, PC-based attenuation is not specific to prognostic immune infiltration; top methylation PCs capture broader variation (global methylation, purity, sex, and subtype). Rather, the contrast between melanoma and the four other cohorts rests specifically on direct RNA-seq immune-score adjustment, which removed 99.96% of clinical-only hits in RNA-matched SKCM (5,277/5,279) vs. 0.0% in HNSC, LUAD, BLCA, and LIHC (11, 91, 79, and 59 retained hits; Table 3). Moreover, our 50 survival-time permutations per model and cohort showed that <strong>nominal <em>p</em>-values were near-calibrated (mean 5.18–6.51% at <em>p</em> &lt; 0.05; median 0–3 hits at <em>q</em> &lt; 0.05), but <em>q</em>-values were anti-conservative because of correlated probe blocks, with 28–78% of permutations yielding at least one false discovery at <em>q</em> &lt; 0.05</strong> and mean false-positive counts of 0.76–48.2 across adjusted models (e.g., 4.08–20.06 in LIHC; 1.92–15.56 in LUAD). Because the non-melanoma baseline counts (11–91 hits) are similar in magnitude to these null false-positive means, the 0% attenuation (100% retention) in those four cohorts is not informative on its own and may reflect noise-level baseline hit sets, reinforcing that the contrast rests on melanoma. At the same time, the large post-adjustment count increases in several models (such as LIHC rising from 59 to 559 and BLCA from 79 to 401 under RNA immune adjustment, or HNSC from 15 to 772 under 3-PC adjustment) far exceed the permutation null means and are likely real covariate-conditioned signals—whether from variance reduction or statistical suppression—rather than permutation-level FDR noise. Finally, across a 50/50 discovery/validation split in TCGA-SKCM, we found no FDR-significant CpG &times; immune-score interactions and no improvement in out-of-sample C-index from adding top promoter CpGs (&Delta;C = &minus;0.006 and &minus;0.005).</p>
+
+    <h3>Regulator Enrichment and Mechanistic Evaluation of <em>CRABP2</em> Using Matched RNA-Seq</h3>
+    <p>Across all 65,227 mRNA-mapped promoter CpGs in TCGA-SKCM, composition-adjusted survival candidates were enriched for inverse methylation–expression correlations (<em>r</em><sub>partial</sub> &lt; &minus;0.20, <em>q</em> &lt; 0.05) relative to both the array background (36.4% of 5-PC hits [28/77] and 34.1% of nominal <em>p</em> &lt; 10<sup>&minus;3</sup> immune-adjusted hits [77/226] vs. 23.2% background; OR 1.89 and 1.72) and SD- and mean-&beta;-matched nulls (<em>p</em> = 0.0090 and <em>p</em> = 0.0010). Among these candidates, <em>CRABP2</em> was supported by three promoter probes (<code>cg02363950</code> <em>r</em><sub>partial</sub> = &minus;0.321, <code>cg24251193</code> <em>r</em><sub>partial</sub> = &minus;0.257, <code>cg17165580</code> <em>r</em><sub>partial</sub> = &minus;0.239), and <code>cg02363950</code> replicated its negative mRNA correlation in TCGA-HNSC (<em>r</em> = &minus;0.214), TCGA-LUAD (<em>r</em> = &minus;0.188), and TCGA-BLCA (<em>r</em> = &minus;0.286). Nevertheless, mediation analysis in TCGA-SKCM revealed that bulk <em>CRABP2</em> mRNA expression does not significantly predict survival (HR = 1.11, <em>p</em> = 0.185 after clinical and immune adjustment) and showed no evidence of mediating the survival association of <code>cg02363950</code> (bootstrap 95% CI for <em>a</em> &times; <em>b</em>: &minus;0.0418 to +0.0471; Sobel <em>p</em> = 0.908 [24]). Likewise, neither of the two loci surviving FDR &lt; 0.05 after direct RNA immune adjustment—<em>DYSFIP1</em> (<code>cg03750525</code>, <em>r</em><sub>partial</sub> = +0.040) and <em>KRAS</em> (<code>cg23152216</code>, <em>r</em><sub>partial</sub> = &minus;0.033; 10-bp SNP flag <code>rs61759611</code>)—correlated with its bulk mRNA, indicating that bulk CpG survival associations can reflect cell-state covariates rather than mediation by steady-state transcript abundance.</p>
+
+    <h3>Stress-Testing Melanoma Methylation Classifiers Across Sample Types</h3>
+    <p>In GSE120878, promoter-only classifiers achieved five-fold cross-validated discrimination (AUC 0.995–0.998; accuracy 95.7–96.9%) comparable to Conway et al. [9] (AUC 0.996) and detected 88.8–99.6% of TCGA-SKCM tumors (Table 4, Figure 3). However, external stress testing on GSE122909 [10] (<em>n</em> = 15: 7 tissue melanomas vs. 8 cultured melanocytes) yielded no discrimination (AUC 0.446–0.500; 95% CIs: 0.13–0.80). Cross-cohort inspection of &beta;-values (Table 4 note) shows that the top diagnostic developmental transcription factor promoters (<em>HOXD13</em>, <em>PAX3</em>, <em>PAX6</em>, <em>EVX2</em>, <em>TLX3</em>) are unmethylated in benign nevi <em>in vivo</em> (&beta;&#772; = 0.236) and hypermethylated in GSE120878 FFPE melanomas (&beta;&#772; = 0.608) and TCGA-SKCM melanomas (&beta;&#772; = 0.650), but show intermediate methylation in GSE122909 cultured melanocytes (&beta;&#772; = 0.476), tissue melanomas (&beta;&#772; = 0.460), and cell lines (&beta;&#772; = 0.462), consistent with culture- or proliferation-associated remodeling at developmental homeobox loci [5,7] and specimen differences.</p>
+
+    <h3>Study Limitations</h3>
+    <ol>
+        <li><strong>Single Positive Cohort, Non-Informative Non-Melanoma Retention, and PC Non-Specificity:</strong> Among the five TCGA cohorts examined, only TCGA-SKCM exhibited a strong prognostic immune effect and large baseline clinical-only survival inflation; moreover, TCGA-SKCM consists predominantly of metastases (357/456 metastases, 48.5% mortality), whereas HNSC, LUAD, BLCA, and LIHC consist of primary tumors (<code>01A</code>/<code>01B</code> after removing <code>11A</code>/<code>11B</code> normals; 35.8–44.2% mortality). Because 5-PC adjustment removes 28.2–100.0% of baseline hits across all five cancers, the contrast between melanoma and the four other cohorts relies on direct RNA-seq immune-score adjustment alone, where the non-melanoma baseline counts (11, 59, 79, and 91 hits) are comparable to null false-positive means so that 0% attenuation in those four cohorts is not informative on its own.</li>
+        <li><strong>Residual Within-Site Lymphoid Confounding and Marker Score:</strong> Although categorical biopsy-site adjustment in TCGA-SKCM left 4,281 hits and PC2 tracked immune expression within both lymph node (<em>r</em> = +0.722) and non-lymph-node (<em>r</em> = +0.692) biopsies, categorical site adjustment cannot eliminate continuous differences in normal lymphoid content among lymph node metastases. Also, our 14-gene immune score is a marker average rather than a calibrated deconvolution estimator such as CIBERSORT [25] or ESTIMATE [26].</li>
+        <li><strong>Anti-Conservative <em>q</em>-Values Under Correlated Probes, Cohort-Level PCA, and Statistical Power:</strong> In survival-time permutations, nominal <em>p</em>-values were near-calibrated (5.18–6.51% at <em>p</em> &lt; 0.05), but <em>q</em>-values were anti-conservative because of correlated probe blocks, with 28–78% of permutations yielding &ge; 1 false discovery at <em>q</em> &lt; 0.05 (mean 0.76–48.2 false positives across adjusted models; post-adjustment increases such as 59 to 559 in LIHC nevertheless far exceed these null means). Mean imputation and PCA were performed on each full cohort matrix before survival modeling (though C-index feature selection was strictly in-fold), and our 50/50 split (<em>n</em> = 227 per half) for CpG &times; immune interactions and Sobel/bootstrap mediation tests have limited power for small effects.</li>
+        <li><strong>Manifest-Based SNP Filtering and GSE122909 Sample Size:</strong> Our polymorphism check removed the 9,679 promoter probes flagged in GPL13534 (<code>Probe_SNPs</code>, <code>Probe_SNPs_10</code>) rather than external cross-reactive lists [15,16], and GSE122909 contains 15 non-cell-line samples (7 tissue melanomas and 8 cultured melanocytes) comparing fresh/cultured specimens against FFPE biopsies in GSE120878.</li>
+    </ol>
+
+    <h2>Conclusion</h2>
+    <p>Across five TCGA cohorts (<em>n</em> = 2,198 across SKCM, HNSC, LUAD, BLCA, and LIHC), top promoter methylation PCs tracked global promoter methylation (<em>r</em> = +0.850–0.982) and transcriptomic immune infiltration (<em>R</em> = 0.574–0.750) in all five cancers examined. Whereas 5-PC adjustment attenuated 28.2–100.0% of clinical-only hits across all five cohorts, direct adjustment for the 14-gene RNA-seq immune score attenuated 99.96% of clinical-only hits in melanoma (5,277/5,279 in RNA-matched SKCM, where immune infiltration strongly predicts survival; HR = 0.681, <em>p</em> = 6.99 &times; 10<sup>&minus;8</sup>; biopsy-site adjustment left 4,281 hits) compared with 0.0% of the smaller clinical-only hit sets (11–91 hits) in HNSC, LIHC, BLCA, and LUAD, consistent with the hypothesis that immune admixture inflates bulk survival screens specifically when leukocyte infiltration is strongly prognostic. Although 5-PC-adjusted hits in melanoma were enriched for inverse mRNA correlations (36.4% vs. 23.2%, <em>p</em> = 0.0090), led by three <em>CRABP2</em> promoter probes (<code>cg02363950</code> <em>r</em><sub>partial</sub> = &minus;0.321), <em>CRABP2</em> mRNA showed no evidence of mediating survival (bootstrap 95% CI: &minus;0.042 to +0.047; Sobel <em>p</em> = 0.908) and multi-CpG models did not improve held-out C-index. In parallel, a 10- to 200-CpG promoter classifier separated primary melanoma from benign nevi (AUC 0.995–0.998; 88.8–99.6% TCGA-SKCM sensitivity) but showed no discrimination between tissue melanomas and cultured melanocytes in GSE122909 (AUC 0.45–0.50).</p>
+
+    <h2>Data and Code Availability</h2>
+    <p>TCGA-SKCM, TCGA-HNSC, TCGA-LUAD, TCGA-BLCA, and TCGA-LIHC data were obtained from UCSC Xena (<code>https://xenabrowser.net/datapages/</code>), and GSE120878, GSE122909, and GPL13534 from NCBI GEO (<code>https://www.ncbi.nlm.nih.gov/geo/</code>). All Python scripts and output tables (using <code>numpy</code> [18], <code>scipy</code> [19], <code>pandas</code> [20], <code>scikit-learn</code> [21], <code>statsmodels</code> [22], and <code>matplotlib</code> [23]) are archived at <code>https://github.com/NolanYu1111/melanoma-methylation-sts</code> (and mirrored at <code>https://github.com/NolanYu1111/melanoma-methylation-pipeline</code>).</p>
+
+    <h2 style="page-break-before: always; margin-top: 0;">References</h2>
+    <ol class="ref-list">
+        <li>Siegel RL, Giaquinto AN, Jemal A. Cancer statistics, 2024. <em>CA Cancer J Clin.</em> 2024;74(1):12–49. doi:10.3322/caac.21820</li>
+        <li>Hayward NK, Wilmott JS, Waddell N, et al. Whole-genome landscapes of major melanoma subtypes. <em>Nature.</em> 2017;547(7663):341–348. doi:10.1038/nature22071</li>
+        <li>Alexandrov LB, Nik-Zainal S, Wedge DC, et al. Signatures of mutational processes in human cancer. <em>Nature.</em> 2013;500(7463):415–421. doi:10.1038/nature12477</li>
+        <li>Cancer Genome Atlas Network. Genomic classification of cutaneous melanoma. <em>Cell.</em> 2015;161(7):1681–1696. doi:10.1016/j.cell.2015.05.044</li>
+        <li>Esteller M. Epigenetics in cancer. <em>N Engl J Med.</em> 2008;358(11):1148–1159. doi:10.1056/NEJMra072067</li>
+        <li>Lauss M, Ringnér M, Karlsson A, et al. DNA methylation subgroups in melanoma are associated with proliferative and immunological processes. <em>BMC Med Genomics.</em> 2015;8:73. doi:10.1186/s12920-015-0147-4</li>
+        <li>Sigalotti L, Covre A, Fratta E, et al. Epigenetics of human cutaneous melanoma: setting the stage for new therapeutic strategies. <em>J Cell Physiol.</em> 2007;212(2):320–328. doi:10.1002/jcp.21066</li>
+        <li>Ehrlich M. DNA hypomethylation in cancer cells. <em>Epigenomics.</em> 2009;1(2):239–259. doi:10.2217/epi.09.33</li>
+        <li>Conway K, Edmiston SN, Parker JS, et al. Identification of a robust methylation classifier for cutaneous melanoma diagnosis. <em>J Invest Dermatol.</em> 2019;139(6):1349–1361. (NCBI GEO GSE120878). doi:10.1016/j.jid.2018.11.024</li>
+        <li>Fujiwara S, Nagai H, Jimbo H, et al. Gene expression and methylation analysis in melanomas and melanocytes from the same patient; loss of NPM2 expression is a potential immunohistochemical marker for melanoma. <em>Front Oncol.</em> 2018;8:675. (NCBI GEO GSE122909). doi:10.3389/fonc.2018.00675</li>
+        <li>Bibikova M, Barnes B, Tsan C, et al. High density DNA methylation array with broad coverage of CpG islands and genes. <em>Genomics.</em> 2011;98(4):288–295. (NCBI GEO GPL13534). doi:10.1016/j.ygeno.2011.07.007</li>
+        <li>Cox DR. Regression models and life-tables. <em>J R Stat Soc Series B Stat Methodol.</em> 1972;34(2):187–220.</li>
+        <li>Benjamini Y, Hochberg Y. Controlling the false discovery rate: a practical and powerful approach to multiple testing. <em>J R Stat Soc Series B Stat Methodol.</em> 1995;57(1):289–300.</li>
+        <li>Houseman EA, Accomando WP, Koestler DC, et al. DNA methylation arrays as surrogate measures of cell mixture distribution. <em>BMC Bioinformatics.</em> 2012;13:86. doi:10.1186/1471-2105-13-86</li>
+        <li>Chen YA, Lemire M, Choufani S, et al. Discovery of cross-reactive probes and polymorphic CpGs in the Illumina Infinium HumanMethylation450 microarray. <em>Epigenetics.</em> 2013;8(2):203–209. doi:10.4161/epi.23470</li>
+        <li>Zhou W, Laird PW, Shen H. Comprehensive characterization, annotation and innovative use of Infinium DNA methylation BeadChip probes. <em>Nucleic Acids Res.</em> 2017;45(4):e22. doi:10.1093/nar/gkw967</li>
+        <li>Goldman MJ, Craft B, Hastie M, et al. Visualizing and interpreting cancer genomics data via the Xena platform. <em>Nat Biotechnol.</em> 2020;38(6):675–678. doi:10.1038/s41587-020-0546-8</li>
+        <li>Harris CR, Millman KJ, van der Walt SJ, et al. Array programming with NumPy. <em>Nature.</em> 2020;585(7825):357–362. doi:10.1038/s41586-020-2649-2</li>
+        <li>Virtanen P, Gommers R, Oliphant TE, et al. SciPy 1.0: fundamental algorithms for scientific computing in Python. <em>Nat Methods.</em> 2020;17(3):261–272. doi:10.1038/s41592-019-0686-2</li>
+        <li>McKinney W. Data structures for statistical computing in Python. <em>Proc 9th Python Sci Conf.</em> 2010:56–61.</li>
+        <li>Pedregosa F, Varoquaux G, Gramfort A, et al. Scikit-learn: machine learning in Python. <em>J Mach Learn Res.</em> 2011;12:2825–2830.</li>
+        <li>Seabold S, Perktold J. Statsmodels: econometric and statistical modeling with Python. <em>Proc 9th Python Sci Conf.</em> 2010:92–96.</li>
+        <li>Hunter JD. Matplotlib: a 2D graphics environment. <em>Comput Sci Eng.</em> 2007;9(3):90–95. doi:10.1038/MCSE.2007.55</li>
+        <li>Sobel ME. Asymptotic confidence intervals for indirect effects in structural equation models. <em>Sociol Methodol.</em> 1982;13:290–312. doi:10.2307/270723</li>
+        <li>Newman AM, Liu CL, Green MR, et al. Robust enumeration of cell subsets from tissue expression profiles. <em>Nat Methods.</em> 2015;12(5):453–457. doi:10.1038/nmeth.3337</li>
+        <li>Yoshihara K, Shahmoradgoli M, Martínez E, et al. Inferring tumour purity and stromal and immune cell admixture from expression data. <em>Nat Commun.</em> 2013;4:2612. doi:10.1038/ncomms3612</li>
+    </ol>
+
+</body>
+</html>
